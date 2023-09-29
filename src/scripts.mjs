@@ -1,6 +1,7 @@
 import { wrapText } from '@liquid-labs/wrap-text'
 
 const CATALYST_CLI_NAME = () => process.env.CATALYST_CLI_NAME || 'catalyst'
+
 const CATALYST_GENERATED_FILE_NOTICE = ({ builderNPMName, commentToken }) => {
   if (!commentToken.endsWith(' ')) {
     commentToken += ' '

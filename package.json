@@ -22,5 +22,8 @@
   "homepage": "https://github.com/liquid-labs/catalyst-defaults#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.22"
+  },
+  "dependencies": {
+    "@liquid-labs/wrap-text": "^1.0.0-alpha.6"
   }
 }
