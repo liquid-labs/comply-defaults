@@ -1,0 +1,19 @@
+Test git rev: 4296315464043b572f25ea4d1455ed18e02beb1d
+PASS test/scripts.test.js
+PASS test/network.test.js
+PASS test/locations.test.js
+---------------|---------|----------|---------|---------|-------------------
+File           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------|---------|----------|---------|---------|-------------------
+All files      |   83.33 |    27.77 |   36.36 |   81.25 |                   
+ index.mjs     |       0 |        0 |       0 |       0 | 1-3               
+ locations.mjs |     100 |       50 |      40 |     100 | 7                 
+ network.mjs   |     100 |      100 |     100 |     100 |                   
+ scripts.mjs   |     100 |    33.33 |      50 |     100 | 3                 
+---------------|---------|----------|---------|---------|-------------------
+
+Test Suites: 3 passed, 3 total
+Tests:       8 passed, 8 total
+Snapshots:   0 total
+Time:        0.274 s, estimated 1 s
+Ran all test suites.
