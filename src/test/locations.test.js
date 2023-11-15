@@ -5,7 +5,7 @@ import * as locations from '../locations'
 
 describe('COMPLY_HOME', () => {
   test("defaults to '.liq' in users home dir", () =>
-    expect(locations.COMPLY_HOME()).toBe(fsPath.join(process.env.HOME, '.config', 'catalyst')))
+    expect(locations.COMPLY_HOME()).toBe(fsPath.join(process.env.HOME, '.config', 'comply-server')))
 
   test('can be overridden by setting environment var COMPLY_HOME', () => {
     const newHome = fsPath.sep + 'foo'
