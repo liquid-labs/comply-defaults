@@ -1,1 +1,1 @@
-export const CATALYST_PORT = () => process.env.CATALYST_PORT || 32700
+export const COMPLY_PORT = () => process.env.COMPLY_PORT || 32600

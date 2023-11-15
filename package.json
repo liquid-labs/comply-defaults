@@ -1,8 +1,8 @@
 {
-  "name": "@liquid-labs/catalyst-defaults",
+  "name": "@liquid-labs/comply-defaults",
   "version": "1.0.0-alpha.5",
   "description": "",
-  "main": "dist/catalyst-defaults.js",
+  "main": "dist/comply-defaults.js",
   "scripts": {
     "build": "make",
     "lint": "make lint",
@@ -15,11 +15,14 @@
   "keywords": [],
   "author": "Zane Rockenbaugh <zane@liquid-labs.com>",
   "license": "UNLICENSED",
-  "repository": "git+ssh://git@github.com/liquid-labs/catalyst-defaults.git",
-  "bugs": {
-    "url": "https://github.com/liquid-labs/catalyst-defaults/issues"
+  "repository": {
+    "url": "git+ssh://git@github.com/liquid-labs/comply-defaults.git",
+    "type": "git"
   },
-  "homepage": "https://github.com/liquid-labs/catalyst-defaults#readme",
+  "bugs": {
+    "url": "https://github.com/liquid-labs/comply-defaults/issues"
+  },
+  "homepage": "https://github.com/liquid-labs/comply-defaults#readme",
   "devDependencies": {
     "@liquid-labs/catalyst-scripts-node-project": "^1.0.0-alpha.22"
   },

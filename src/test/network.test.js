@@ -1,17 +1,17 @@
 /* global describe expect test */
 import * as network from '../network'
 
-describe('CATALYST_PORT', () => {
-  test('defaults to 32700', () => expect(network.CATALYST_PORT()).toBe(32700))
+describe('COMPLY_PORT', () => {
+  test('defaults to 32700', () => expect(network.COMPLY_PORT()).toBe(32600))
 
-  test('can be overridden by setting environment var CATALYST_PORT', () => {
+  test('can be overridden by setting environment var COMPLY_PORT', () => {
     const newPort = 32652
-    process.env.CATALYST_PORT = newPort
+    process.env.COMPLY_PORT = newPort
     try {
-      expect(network.CATALYST_PORT()).toBe(newPort + '')
+      expect(network.COMPLY_PORT()).toBe(newPort + '')
     }
     finally {
-      delete process.env.CATALYST_PORT
+      delete process.env.COMPLY_PORT
     }
   })
 })

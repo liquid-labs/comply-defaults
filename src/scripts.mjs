@@ -1,8 +1,8 @@
 import { wrap } from '@liquid-labs/wrap-text'
 
-const CATALYST_CLI_NAME = () => process.env.CATALYST_CLI_NAME || 'catalyst'
+export const COMPLY_SERVER_CLI_NAME = () => 'catalyst-server'
 
-const CATALYST_GENERATED_FILE_NOTICE = ({ builderNPMName, commentToken }) => {
+export const COMPLY_GENERATED_FILE_NOTICE = ({ builderNPMName, commentToken }) => {
   if (!commentToken.endsWith(' ')) {
     commentToken += ' '
   }
@@ -12,5 +12,3 @@ const CATALYST_GENERATED_FILE_NOTICE = ({ builderNPMName, commentToken }) => {
       width  : 80
     })
 }
-
-export { CATALYST_CLI_NAME, CATALYST_GENERATED_FILE_NOTICE }
