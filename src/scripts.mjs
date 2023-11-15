@@ -1,6 +1,6 @@
 import { wrap } from '@liquid-labs/wrap-text'
 
-export const COMPLY_SERVER_CLI_NAME = () => 'catalyst-server'
+export const COMPLY_SERVER_CLI_NAME = () => 'comply-server'
 
 export const COMPLY_GENERATED_FILE_NOTICE = ({ builderNPMName, commentToken }) => {
   if (!commentToken.endsWith(' ')) {
