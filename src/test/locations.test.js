@@ -19,16 +19,16 @@ describe('COMPLY_HOME', () => {
   })
 })
 
-describe('COMPLY_API_SPEC', () => {
+describe('COMPLY_API_SPEC_PATH', () => {
   test("defaults to '<COMPLY_HOME>/api.json'", () =>
-    expect(locations.COMPLY_API_SPEC()).toBe(fsPath.join(locations.COMPLY_HOME(), 'api.json')))
+    expect(locations.COMPLY_API_SPEC_PATH()).toBe(fsPath.join(locations.COMPLY_HOME(), 'api.json')))
 
   test('updates location when COMPLY_HOME is overriden', () => {
     const newHome = fsPath.sep + 'foo'
     const newAPI = fsPath.join(newHome, 'api.json')
     process.env.COMPLY_HOME = newHome
     try {
-      expect(locations.COMPLY_API_SPEC()).toBe(newAPI)
+      expect(locations.COMPLY_API_SPEC_PATH()).toBe(newAPI)
     }
     finally {
       delete process.env.COMPLY_HOME
